@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Telefon"
              x:Class="Telefon.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<Label Text="Rýgr je gay!" x:Name="myText" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 

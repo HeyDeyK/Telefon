@@ -12,6 +12,7 @@ namespace Telefon
         public MainPage()
         {
             InitializeComponent();
+            myText.Text = "JE FURT GAY";
         }
     }
 }
