@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ImageCircle.Forms.Plugin.Abstractions;
 
 namespace Telefon
 {
@@ -12,7 +13,9 @@ namespace Telefon
         public MainPage()
         {
             InitializeComponent();
-            myText.Text = "JE FURT GAY";
+            
         }
+
+
     }
 }

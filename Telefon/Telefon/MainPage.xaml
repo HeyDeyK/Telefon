@@ -1,11 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              xmlns:local="clr-namespace:Telefon"
              x:Class="Telefon.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rýgr je gay!" x:Name="myText" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Jméno" x:Name="myText2" VerticalOptions="Center" HorizontalOptions="Start" Margin="20"/>
+            <Image Source="arrow.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"/>
+            <ContentView>
+                <controls:CircleImage Source="logic.png" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" ></controls:CircleImage>
+            </ContentView>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+    <RelativeLayout>
 
-	<Label Text="Rýgr je gay!" x:Name="myText" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        <BoxView x:Name="Boxview1" BackgroundColor="Fuchsia"   
+            RelativeLayout.WidthConstraint="{ConstraintExpression  
+            Type=RelativeToParent,  
+            Property=Width,  
+            Factor=1}"  
+            RelativeLayout.HeightConstraint="{ConstraintExpression  
+            Type=RelativeToParent,  
+            Property=Height,  
+            Factor=0.3}"></BoxView>
+
+    </RelativeLayout>
 
 </ContentPage>
