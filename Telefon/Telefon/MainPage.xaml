@@ -7,10 +7,10 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Rýgr je gay!" x:Name="myText" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Label Text="Jméno" x:Name="myText2" VerticalOptions="Center" HorizontalOptions="Start" Margin="20"/>
-            <Image Source="arrow.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"/>
+            
+            
             <ContentView>
-                <controls:CircleImage Source="logic.png" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" ></controls:CircleImage>
+                
             </ContentView>
             
         </StackLayout>
@@ -18,15 +18,53 @@
     </ContentPage.Content>
     <RelativeLayout>
 
-        <BoxView x:Name="Boxview1" BackgroundColor="Fuchsia"   
-            RelativeLayout.WidthConstraint="{ConstraintExpression  
-            Type=RelativeToParent,  
-            Property=Width,  
-            Factor=1}"  
-            RelativeLayout.HeightConstraint="{ConstraintExpression  
-            Type=RelativeToParent,  
-            Property=Height,  
-            Factor=0.3}"></BoxView>
+        
+        
+        <Image Source="arrownew.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-190}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-315}"/>
+        <Image Source="dots.png" HeightRequest="40" WidthRequest="50" HorizontalOptions="Start" Margin="15"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=120}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-310}"/>
+        <controls:CircleImage Source="logic.png" WidthRequest="150" HeightRequest="150" Aspect="AspectFit" 
+                              RelativeLayout.XConstraint =
+                                  "{ConstraintExpression Type=RelativeToParent,
+                                                         Property=Width,
+                                                         Factor=0.5,
+                                                         Constant=-75}"
+                                RelativeLayout.YConstraint =
+                                  "{ConstraintExpression Type=RelativeToParent,
+                                                         Property=Height,
+                                                         Factor=0.5,
+                                                         Constant=-230}"
+        ></controls:CircleImage>
+        <Label Text="Jakub Vlček" x:Name="myText2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="30" TextColor="Black"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-75}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-70}"/>
 
     </RelativeLayout>
 
