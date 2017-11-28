@@ -13,7 +13,8 @@ namespace Telefon
         {
             InitializeComponent();
 
-            MainPage = new Telefon.MainPage();
+            MainPage = new Telefon.Seznam();
+            
         }
 
         protected override void OnStart()
