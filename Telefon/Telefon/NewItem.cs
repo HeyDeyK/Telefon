@@ -8,7 +8,7 @@ namespace Telefon
 {
     class NewItem
     {
-        public string Text;
-        public string ImageSource;
+        public string Text { get; set; }
+        public string Image { get; set; }
     }
 }

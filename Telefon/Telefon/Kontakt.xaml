@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:local="clr-namespace:Telefon"
+             x:Class="Telefon.Kontakt">
+    
+    <RelativeLayout>
+
+
+
+        <Image Source="arrownew.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-190}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-295}">
+
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="BackTapped"  />
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Source="dots.png" HeightRequest="40" WidthRequest="50" HorizontalOptions="Start" Margin="15"  x:Name="imgBtn"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=120}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-290}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped"  />
+            </Image.GestureRecognizers>
+        </Image>
+        <controls:CircleImage Source="{Binding Image}" WidthRequest="150" HeightRequest="150" Aspect="AspectFit" 
+                              RelativeLayout.XConstraint =
+                                  "{ConstraintExpression Type=RelativeToParent,
+                                                         Property=Width,
+                                                         Factor=0.5,
+                                                         Constant=-75}"
+                                RelativeLayout.YConstraint =
+                                  "{ConstraintExpression Type=RelativeToParent,
+                                                         Property=Height,
+                                                         Factor=0.5,
+                                                         Constant=-230}"
+        ></controls:CircleImage>
+        <Label Text="{Binding Text}" x:Name="myText2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="30" TextColor="Black"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-75}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-70}"/>
+
+        <Image Source="sms.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=25}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-30}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="SMSTapped"  />
+            </Image.GestureRecognizers>
+        </Image>
+        <Image x:Name="btnTel" Source="tel.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="15"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-85}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=-30}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="TelTapped"  />
+            </Image.GestureRecognizers>
+        </Image>
+        <Label Text="Mobil" x:Name="myText3" VerticalOptions="Center" HorizontalOptions="Center" FontSize="25" TextColor="#2c7da0"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-150}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=60}"/>
+        <Label Text="+420 724 814 961" x:Name="myText4" VerticalOptions="Center" HorizontalOptions="Center" FontSize="32" TextColor="Black"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-150}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=90}"/>
+        <Label Text="Adresa" x:Name="myText5" VerticalOptions="Center" HorizontalOptions="Center" FontSize="25" TextColor="#2c7da0"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-150}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=150}"/>
+        <Label Text="Novoborská 420" x:Name="myText6" VerticalOptions="Center" HorizontalOptions="Center" FontSize="32" TextColor="Black"
+               RelativeLayout.XConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Width,
+                                     Factor=0.5,
+                                     Constant=-150}"
+            RelativeLayout.YConstraint =
+              "{ConstraintExpression Type=RelativeToParent,
+                                     Property=Height,
+                                     Factor=0.5,
+                                     Constant=180}"/>
+
+    </RelativeLayout>
+</ContentPage>

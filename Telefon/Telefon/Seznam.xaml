@@ -5,12 +5,11 @@
     <ContentPage.Content>
     </ContentPage.Content>
     <ScrollView>
-        <StackLayout Orientation="Vertical">
-            <Label Text="Jakub Vlček"></Label>
-            <ListView x:Name="list" >
+        <StackLayout Orientation="Vertical" >
+            <ListView x:Name="list" SeparatorColor="#2c7da0" RowHeight="85" ItemTapped="KontaktTap">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell ImageSource="{Binding Image}" Text="{Binding Text}"/>
+                        <ImageCell  Text="{Binding Text}" ImageSource="{Binding Image}" TextColor="Black" DetailColor="Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
