@@ -20,12 +20,12 @@ namespace Telefon
             InitializeComponent();
             
             ObservableCollection<NewItem> kontakty = new ObservableCollection<NewItem>();
-            kontakty.Add(new NewItem { Text = "Adam", Image = "logic.png" });
-            kontakty.Add(new NewItem { Text = "Bertík", Image = "logic.png" });
-            kontakty.Add(new NewItem { Text = "Jenda", Image = "logic.png" });
-            kontakty.Add(new NewItem { Text = "Ondra", Image = "logic.png" });
-            kontakty.Add(new NewItem { Text = "Smrk", Image = "logic.png" });
-            kontakty.Add(new NewItem { Text = "Ročejdl", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Adam Vileta", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Bertík Vileta", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Jenda Vileta", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Ondra Vileta", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Smrk Vileta", Image = "logic.png" });
+            kontakty.Add(new NewItem { Text = "Ročejdl Vileta", Image = "logic.png" });
 
             list.ItemsSource = kontakty;
 
